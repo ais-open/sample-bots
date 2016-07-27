@@ -1,0 +1,116 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "EmailSignupBot",
+  "desc": "A sample app for an email  signup bot.",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "Greet",
+      "Children": []
+    },
+    {
+      "Name": "SignUp",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "ZipCode",
+      "Children": []
+    },
+    {
+      "Name": "EmailAddress",
+      "Children": []
+    }
+  ],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "sign up for zip 10065",
+      "intent": "SignUp",
+      "entities": [
+        {
+          "entity": "ZipCode",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "sign me up with my.address@hotmail.com",
+      "intent": "SignUp",
+      "entities": [
+        {
+          "entity": "EmailAddress",
+          "startPos": 4,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "i want to sign up with email myaddress@gmail.com in zip code 20191",
+      "intent": "SignUp",
+      "entities": [
+        {
+          "entity": "ZipCode",
+          "startPos": 15,
+          "endPos": 15
+        },
+        {
+          "entity": "EmailAddress",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greet",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greet",
+      "entities": []
+    },
+    {
+      "text": "signup",
+      "intent": "SignUp",
+      "entities": []
+    },
+    {
+      "text": "signup myemail@mail.com",
+      "intent": "SignUp",
+      "entities": [
+        {
+          "entity": "EmailAddress",
+          "startPos": 1,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "sign up in zip 20191",
+      "intent": "SignUp",
+      "entities": [
+        {
+          "entity": "ZipCode",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "hey",
+      "intent": "Greet",
+      "entities": []
+    }
+  ]
+}
